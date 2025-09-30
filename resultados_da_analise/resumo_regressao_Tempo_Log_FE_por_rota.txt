@@ -1,0 +1,60 @@
+                                OLS Regression Results                                
+======================================================================================
+Dep. Variable:     np.log(tempo_voo_real_min)   R-squared:                       0.959
+Model:                                    OLS   Adj. R-squared:                  0.959
+Method:                         Least Squares   F-statistic:                 1.414e+04
+Date:                        Mon, 29 Sep 2025   Prob (F-statistic):           3.03e-45
+Time:                                19:07:16   Log-Likelihood:             5.9198e+05
+No. Observations:                      544032   AIC:                        -1.184e+06
+Df Residuals:                          543999   BIC:                        -1.184e+06
+Df Model:                                  32                                         
+Covariance Type:                      cluster                                         
+============================================================================================
+                               coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------------
+const                        1.9879      0.002   1247.231      0.000       1.985       1.991
+Intercept                    1.9879      0.002   1247.231      0.000       1.985       1.991
+C(route_id)[T.SBBR-SBRJ]    -0.0557      0.002    -31.059      0.000      -0.059      -0.052
+C(route_id)[T.SBBR-SBSP]    -0.0202      0.002    -12.197      0.000      -0.023      -0.017
+C(route_id)[T.SBCF-SBGR]    -0.0132      0.001    -24.826      0.000      -0.014      -0.012
+C(route_id)[T.SBCF-SBSP]    -0.0185      0.000    -53.155      0.000      -0.019      -0.018
+C(route_id)[T.SBCT-SBGR]    -0.0393      0.001    -51.135      0.000      -0.041      -0.038
+C(route_id)[T.SBCT-SBSP]    -0.1637      0.000   -601.680      0.000      -0.164      -0.163
+C(route_id)[T.SBFZ-SBGR]    -0.4135      0.000  -1298.530      0.000      -0.414      -0.413
+C(route_id)[T.SBGL-SBGR]    -0.0212      0.001    -29.564      0.000      -0.023      -0.020
+C(route_id)[T.SBGR-SBBR]    -0.0080      0.000    -44.328      0.000      -0.008      -0.008
+C(route_id)[T.SBGR-SBCF]    -0.0766      0.000   -215.450      0.000      -0.077      -0.076
+C(route_id)[T.SBGR-SBCT]    -0.1136      0.001   -145.699      0.000      -0.115      -0.112
+C(route_id)[T.SBGR-SBFZ]    -0.4568      0.000  -1358.684      0.000      -0.457      -0.456
+C(route_id)[T.SBGR-SBGL]    -0.1225      0.000   -362.261      0.000      -0.123      -0.122
+C(route_id)[T.SBGR-SBPA]    -0.0060      0.000    -12.660      0.000      -0.007      -0.005
+C(route_id)[T.SBGR-SBRF]    -0.3642      0.001   -336.689      0.000      -0.366      -0.362
+C(route_id)[T.SBGR-SBSV]    -0.1500      0.000   -304.616      0.000      -0.151      -0.149
+C(route_id)[T.SBPA-SBGR]    -0.0112      0.000    -26.939      0.000      -0.012      -0.010
+C(route_id)[T.SBPA-SBSP]    -0.0873      0.001   -143.493      0.000      -0.089      -0.086
+C(route_id)[T.SBRF-SBGR]    -0.2776      0.001   -244.430      0.000      -0.280      -0.275
+C(route_id)[T.SBRJ-SBBR]    -0.0292      0.002    -16.711      0.000      -0.033      -0.026
+C(route_id)[T.SBRJ-SBSP]    -0.1115      0.003    -37.819      0.000      -0.117      -0.106
+C(route_id)[T.SBSP-SBBR]    -0.0087      0.002     -5.669      0.000      -0.012      -0.006
+C(route_id)[T.SBSP-SBCF]    -0.0686      0.000   -171.178      0.000      -0.069      -0.068
+C(route_id)[T.SBSP-SBCT]    -0.1742      0.000   -619.538      0.000      -0.175      -0.174
+C(route_id)[T.SBSP-SBPA]    -0.0434      0.000    -89.874      0.000      -0.044      -0.042
+C(route_id)[T.SBSP-SBRJ]    -0.1732      0.003    -59.667      0.000      -0.179      -0.167
+C(route_id)[T.SBSV-SBGR]    -0.0555      0.000   -165.444      0.000      -0.056      -0.055
+modelo_A320[T.True]          0.0014      0.002      0.764      0.445      -0.002       0.005
+modelo_A321[T.True]         -0.0139      0.003     -4.219      0.000      -0.020      -0.007
+modelo_B737[T.True]          0.0144      0.004      3.506      0.000       0.006       0.023
+modelo_B738[T.True]          0.0155      0.003      5.207      0.000       0.010       0.021
+pbn_anos                    -0.0148      0.008     -1.742      0.082      -0.031       0.002
+distancia_rota_nm            0.0014   1.66e-06    854.337      0.000       0.001       0.001
+==============================================================================
+Omnibus:                    21807.988   Durbin-Watson:                   1.806
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            29325.009
+Skew:                           0.417   Prob(JB):                         0.00
+Kurtosis:                       3.774   Cond. No.                     1.82e+16
+==============================================================================
+
+Notes:
+[1] Standard Errors are robust to cluster correlation (cluster)
+[2] The smallest eigenvalue is 5.56e-22. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.

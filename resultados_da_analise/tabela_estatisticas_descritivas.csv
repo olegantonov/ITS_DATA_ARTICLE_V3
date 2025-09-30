@@ -1,0 +1,7 @@
+,Média,Desvio Padrão,Mínimo,Máximo
+tempo_voo_real_min,102.6925,45.6160,49.0000,286.0000
+consumo_combustivel_kg,4600.8983,2196.1077,2313.3517,10832.1515
+consumo_co2_do_voo_kg,14538.8386,6939.7002,7310.1913,34229.5987
+distancia_rota_nm,480.3658,326.7932,178.9200,1267.0900
+pbn_anos,0.3396,0.3340,0.0000,0.9900
+velocidade_media_knots,257.4512,64.2014,121.2333,398.0387

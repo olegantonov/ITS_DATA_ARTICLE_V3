@@ -1,0 +1,32 @@
+                              OLS Regression Results                              
+==================================================================================
+Dep. Variable:     consumo_combustivel_kg   R-squared:                       0.993
+Model:                                OLS   Adj. R-squared:                  0.993
+Method:                     Least Squares   F-statistic:                 8.309e+06
+Date:                    Tue, 30 Sep 2025   Prob (F-statistic):               0.00
+Time:                            14:18:29   Log-Likelihood:            -3.6208e+06
+No. Observations:                  544032   AIC:                         7.242e+06
+Df Residuals:                      544025   BIC:                         7.242e+06
+Df Model:                               6                                         
+Covariance Type:                      HC3                                         
+==================================================================================================================
+                                                     coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------------
+Intercept                                       1484.4108      0.781   1901.294      0.000    1482.881    1485.941
+C(modelo, Treatment(reference="A320"))[T.A321]   899.0852      1.488    604.336      0.000     896.169     902.001
+C(modelo, Treatment(reference="A320"))[T.A319]  -202.0820      0.675   -299.404      0.000    -203.405    -200.759
+C(modelo, Treatment(reference="A320"))[T.B737]   -19.9411      0.903    -22.082      0.000     -21.711     -18.171
+C(modelo, Treatment(reference="A320"))[T.B738]    29.9263      0.525     56.983      0.000      28.897      30.956
+pbn_anos                                         -27.7119      0.760    -36.444      0.000     -29.202     -26.222
+distancia_rota_nm                                  6.3384      0.001   5571.536      0.000       6.336       6.341
+==============================================================================
+Omnibus:                    22028.597   Durbin-Watson:                   1.016
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            56082.912
+Skew:                           0.209   Prob(JB):                         0.00
+Kurtosis:                       4.516   Cond. No.                     2.81e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)
+[2] The condition number is large, 2.81e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

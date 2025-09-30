@@ -1,0 +1,32 @@
+                              OLS Regression Results                             
+=================================================================================
+Dep. Variable:     consumo_co2_do_voo_kg   R-squared:                       0.993
+Model:                               OLS   Adj. R-squared:                  0.993
+Method:                    Least Squares   F-statistic:                 8.309e+06
+Date:                   Mon, 29 Sep 2025   Prob (F-statistic):               0.00
+Time:                           19:07:09   Log-Likelihood:            -4.2468e+06
+No. Observations:                 544032   AIC:                         8.494e+06
+Df Residuals:                     544025   BIC:                         8.494e+06
+Df Model:                              6                                         
+Covariance Type:                     HC3                                         
+=====================================================================================
+                        coef    std err          z      P>|z|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+const              4052.1593      2.268   1786.547      0.000    4047.714    4056.605
+pbn_anos            -87.5697      2.403    -36.444      0.000     -92.279     -82.860
+distancia_rota_nm    20.0292      0.004   5571.536      0.000      20.022      20.036
+modelo_A320         638.5790      2.133    299.404      0.000     634.399     642.759
+modelo_A321        3479.6881      5.108    681.283      0.000    3469.677    3489.699
+modelo_B737         575.5650      2.933    196.257      0.000     569.817     581.313
+modelo_B738         733.1462      2.053    357.179      0.000     729.123     737.169
+==============================================================================
+Omnibus:                    22028.597   Durbin-Watson:                   1.016
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            56082.912
+Skew:                           0.209   Prob(JB):                         0.00
+Kurtosis:                       4.516   Cond. No.                     3.75e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)
+[2] The condition number is large, 3.75e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

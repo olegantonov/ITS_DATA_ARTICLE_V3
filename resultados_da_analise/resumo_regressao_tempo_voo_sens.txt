@@ -1,0 +1,32 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:     tempo_voo_real_min   R-squared:                       0.951
+Model:                            OLS   Adj. R-squared:                  0.951
+Method:                 Least Squares   F-statistic:                 9.072e+05
+Date:                Tue, 30 Sep 2025   Prob (F-statistic):               0.00
+Time:                        14:18:39   Log-Likelihood:            -1.8185e+06
+No. Observations:              511424   AIC:                         3.637e+06
+Df Residuals:                  511417   BIC:                         3.637e+06
+Df Model:                           6                                         
+Covariance Type:                  HC3                                         
+==================================================================================================================
+                                                     coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------------
+Intercept                                         37.2997      0.035   1054.621      0.000      37.230      37.369
+C(modelo, Treatment(reference="A320"))[T.A321]    -0.5407      0.048    -11.165      0.000      -0.636      -0.446
+C(modelo, Treatment(reference="A320"))[T.A319]    -1.5861      0.032    -49.300      0.000      -1.649      -1.523
+C(modelo, Treatment(reference="A320"))[T.B737]     0.3788      0.040      9.449      0.000       0.300       0.457
+C(modelo, Treatment(reference="A320"))[T.B738]     0.9579      0.031     31.034      0.000       0.897       1.018
+pbn_anos                                          -2.6795      0.034    -78.234      0.000      -2.747      -2.612
+distancia_rota_nm                                  0.1385   6.25e-05   2217.862      0.000       0.138       0.139
+==============================================================================
+Omnibus:                    66440.292   Durbin-Watson:                   1.908
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           150654.494
+Skew:                           0.777   Prob(JB):                         0.00
+Kurtosis:                       5.157   Cond. No.                     2.46e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)
+[2] The condition number is large, 2.46e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
